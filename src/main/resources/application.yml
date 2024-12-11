@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  endpoint:
+    health:
+      show-details: always
+    prometheus:
+      enabled: true
+    info:
+      app:
+        name: license-management API
+        description: This is a license-management API.
+        version: 1.0.0
+        author: Moinur Hossain
